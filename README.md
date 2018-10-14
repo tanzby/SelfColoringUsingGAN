@@ -11,12 +11,18 @@
 
 ### DataProcessing
 
+
 前提：
 
 * 需要 `python3.x` 的环境
 * 安装`pip` 
 * 需要电脑[配置OpenCL环境](https://documen.tician.de/pyopencl/misc.html)
 
+不想装的话
+```sh
+链接:https://pan.baidu.com/s/1YmTIjA8O7rVJoDgUF7WV3g  
+密码:lmiy
+```
 
 
 一些依赖包，可以通过以下方式安装：
