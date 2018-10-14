@@ -15,6 +15,7 @@
 
 * 需要 `python3.x` 的环境
 * 安装`pip` 
+* 需要电脑[配置OpenCL环境](https://documen.tician.de/pyopencl/misc.html)
 
 
 

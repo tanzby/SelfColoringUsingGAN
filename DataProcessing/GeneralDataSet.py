@@ -93,6 +93,7 @@ def generate_image_data_using_pillow():
 
 @timeit
 def generate_image_data_using_opencl():
+
     # import os
     # os.environ['PYOPENCL_COMPILER_OUTPUT'] = '1'
 
@@ -150,6 +151,7 @@ def generate_image_data_using_opencl():
         usr = np.array(usr_img)
         ori = np.array(ori_img)
         msk = np.array(msk_img).reshape(-1).astype(np.uint8)
+
         h, w, c = usr.shape
         usr_buf = cl.image_from_array(ctx, usr, c)
         ori_buf = cl.image_from_array(ctx, ori, c)
@@ -176,4 +178,4 @@ def generate_image_data_using_opencl():
 
 
 # generate_image_data_using_pillow() 这个很慢
-generate_image_data_using_opencl()
+# generate_image_data_using_opencl()
