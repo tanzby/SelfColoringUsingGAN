@@ -178,4 +178,4 @@ def generate_image_data_using_opencl():
 
 
 # generate_image_data_using_pillow() 这个很慢
-# generate_image_data_using_opencl()
+generate_image_data_using_opencl()
