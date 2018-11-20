@@ -1,3 +1,4 @@
+# /usr/bin/python3
 import os
 import time
 from random import sample
@@ -93,7 +94,6 @@ def generate_image_data_using_pillow():
 
 @timeit
 def generate_image_data_using_opencl():
-
     # import os
     # os.environ['PYOPENCL_COMPILER_OUTPUT'] = '1'
 
