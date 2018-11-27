@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include <vector>
 #include <random>
 #include <chrono>
@@ -115,13 +114,13 @@ struct ImageFiles{
 // 获取所有文件
 std::vector<ImageFiles> getAllImageFiles(){
     std::vector<cv::String> filespath;
-    cv::glob("data/bg_by_user/*.png",filespath,true);
+    cv::glob("../data/bg_by_user/*.png", filespath, true);
     std::vector<ImageFiles> allfiles(filespath.size());
     for(int i = 0; i < filespath.size(); ++i){
         string fore(filespath[i]);
         string mask(filespath[i]);
-        fore.replace(5,10,"foreground");
-        mask.replace(5,10,"inner_mask");
+        fore.replace(8, 10, "foreground");
+        mask.replace(8, 10, "inner_mask");
         allfiles[i] = {filespath[i], fore, mask};
     }
     return allfiles;
@@ -248,7 +247,7 @@ int main(){
                 char _ans[8];
                 sprintf(_ans,"-%d.png",k);
                 saveName = i.user;
-                saveName.replace(5,10,"generate");
+                saveName.replace(8, 10, "generate");
                 saveName = saveName.substr(0,saveName.length()-4)+_ans;
                 cv::cvtColor(rgbUsrM, rgbUsrM, CV_BGR2RGBA);
                 cv::imwrite(saveName,rgbUsrM);
