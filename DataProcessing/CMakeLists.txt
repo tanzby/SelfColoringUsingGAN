@@ -9,7 +9,11 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_HOME_DIRECTORY})
 
-add_subdirectory(source/GenerateImg)
-add_subdirectory(source/GenerateLine)
+add_executable(GenerateData
+        source/GenerateData.cpp
+        source/ImagePath.cpp
+        source/utils.cpp)
+
+target_link_libraries(GenerateData ${OpenCL_LIBRARY} ${OpenCV_LIBS})
 
 
