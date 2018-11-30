@@ -45,9 +45,9 @@ make
 
 输入
 
-|          mask           |          origin           |         colored          |
-| :---------------------: | :-----------------------: | :----------------------: |
-| ![mask](image/mask.png) | ![front](image/front.png) | ![color](image/user.png) |
+|          mask           |           origin           |         colored          |
+| :---------------------: | :------------------------: | :----------------------: |
+| ![mask](image/mask.png) | ![front](image/origin.png) | ![color](image/user.png) |
 
 输出
 

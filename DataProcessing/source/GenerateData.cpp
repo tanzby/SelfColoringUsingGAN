@@ -434,8 +434,5 @@ int main() {
             cerr << "\nWhile writing " << _save_name << endl;
             cerr << e.what() << " " << e.err << endl;
         }
-
     }
-
-
 }
